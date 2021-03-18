@@ -12,12 +12,12 @@ int main (){
     char x; cin>> x;
     int position = size /2;
     while (true) {
-        cout << "|START|" ;
+        cout << "|STARTING LINE!!!|" ;
         for (int i=0; i<size;i++) {
             if (i == position)
                 cout << x;
             else cout << " ";}
-        cout << "|FINISH|" << endl;
+        cout << "|FINISH LINE!!!|" << endl;
         int move= rand()%3 - 1;
         position = position + move;
         if (position <1) {cout << "You could not finish the race! Not surprising..." <<endl; break;}
